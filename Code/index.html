@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripton" content="This website is to help find information based off the country you are looking to go to.">
+    <title>Travel Agency Page</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #ADD8E6, #87CEEB);
+            color: #2c3e50;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        img {
+            height: 300px;
+            width: 400px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #GT, #PT  {
+            text-decoration: none;
+        }
+        #GT {
+            padding: 5px 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+        #PT {
+            padding: 5px 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 25px;
+            margin-left: 25px;
+        }
+        #GT:hover, #PT:hover {
+            background-color: #007BFF;
+            border: 2px solid rgba(0, 123, 255, 0.1);
+            transform: translate(100px, 50px);
+            box-shadow: 10px 10px 20px rgba(100, 149, 237, 0.8);
+        }
+        figcaption {
+            text-align: center;
+            font-size: 20px;
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="introduction">
+        <h1>Welcome to barcelona</h1>
+        <p>
+            Barcelona is a vibrant city full of culture, history, and adventure. 
+            Explore Gaudí’s stunning architecture, relax on beautiful beaches, and enjoy delicious tapas. 
+           Wander through La Rambla, visit world-class museums, and experience the city’s lively nightlife.
+        </p>
+    </div>
+    <div class="Packages">
+        <h2>Packages</h2>
+        <p>
+            Explore Barcelona with tailored travel packages for every traveler. Enjoy cultural tours,
+             beach getaways, foodie adventures, or luxury experiences. 
+           Whether for a weekend or a longer stay, find the perfect package for you.
+        </p>
+    </div>
+    <div clas="links">
+        <ul>
+            <li><a href="#" id="GT">Group Travels</a></li>
+            <li><a href="#" id="PT">Private Tours</a></li>
+        </ul>
+    </div>
+    <div class="itineraries">
+        <h2>Top Itineraries:</h2>
+        
+    </div>
+    <div class="imgs">
+        <figure>
+            <img src="data:image/jpeg;base64,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" alt="Barcelona Home stadium">
+            <figcaption>The main stadium for Barcelona, you should go visit, maybe watch a football game and enjoy.</figcaption>
+        </figure>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="mountain">
+            <figcaption>The wonderful mountains and beautiful scenary, come here to get a good photo.</figcaption>
+        </figure>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="sea">
+            <figcaption>The nice ocean which is perfect for a swim or a boat ride.</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
